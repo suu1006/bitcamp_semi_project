@@ -1,4 +1,4 @@
-package conf;
+package spring.conf;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -50,7 +50,7 @@ public class SpringConfiguration {
 		//		new ClassPathResource("board/dao/boardMapper.xml")
 		//);
 		
-		sqlSessionFactoryBean.setMapperLocations(context.getResources("classpath:*/dao/*Mapper.xml"));
+		sqlSessionFactoryBean.setMapperLocations(context.getResources("classpath:mapper/*Mapper.xml"));
 		
 		return sqlSessionFactoryBean.getObject();
 	}

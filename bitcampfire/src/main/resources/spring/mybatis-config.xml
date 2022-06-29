@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias alias="UserDto" type="com.renee.myshop.domain.UserDto"/>
+        <typeAlias alias="UserDto" type="com.bitcamp.semiproject.bean.UserDto"/>
     </typeAliases>
 </configuration>
